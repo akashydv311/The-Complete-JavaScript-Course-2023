@@ -135,7 +135,62 @@ console.log("___________________________________________________________________
 
 // LECTURE: Logical Operators
 
+const country1 = "India";
+// let population1 = 1428.60;
+let population1 = 28.60;
+
+let isIsland1 = false;
+// let language1 = "Hindi";
+let language1 = 'English';
+
+
+if( language1 == 'English' && population1 < 50 && isIsland1 == false){
+    console.log('You should live in',country1);
+}else{
+    console.log(country1+ ' does not meet your criteria ');
+}
+
+
+console.log("____________________________________________________________________\n");
+
+
+// LECTURE: The switch Statement
+
+language = 'english';
+
+switch (language) {
+    case 'chinese' || 'mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too');
+        break;
+}
+
+console.log("____________________________________________________________________\n");
 
 
 
+// LECTURE: The Conditional (Ternary) Operator
 
+let population2 = 1428.60;
+
+// population2 = 13;
+// population2 = 130;
+
+population2 > 33 ? console.log(`indis's population is above average`) : console.log(`indis's population is below average`);
+
+
+console.log("____________________________________________________________________\n");
