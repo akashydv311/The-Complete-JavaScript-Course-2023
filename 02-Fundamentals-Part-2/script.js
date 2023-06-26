@@ -141,6 +141,36 @@ const makeJuice = (noOfApples, noOfMango) => {
 // console.log(makeJuice(2, 3));
 
 // ******************************************
+/*
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+*/
 
 // Arrays
 
@@ -211,3 +241,191 @@ const funArr = [demoTest(), typeof demoTest1, demoTest2, demoTest3];
 
 // console.log(funArr);
 // console.log(funArr[funArr.length - 1](), funArr[2]());
+
+// console.log(friends);
+
+friends.push("rahul", "Lovekush");
+// console.log(friends);
+
+// friends.pop();
+// console.log(friends);
+
+friends.unshift("Yadavji");
+// console.log(friends);
+
+// ***********************************
+
+// Arrays methods
+
+// console.log(friends);
+const poppedElement = friends.pop();
+// console.log(poppedElement, friends);
+
+const newLength = friends.unshift("Ashutosh");
+// console.log(newLength, friends);
+
+const newLength1 = friends.push("Lovekush");
+// console.log(newLength1, friends);
+
+const newmovedFirstEement = friends.shift();
+// console.log(newmovedFirstEement);
+// console.log(friends);
+
+friends.shift();
+friends.shift();
+friends.shift();
+
+// console.log(friends);
+
+const returnV = friends.indexOf("OmKar");
+// console.log(returnV);
+
+const presentOrNot = friends.includes("OmKar");
+// console.log(presentOrNot);
+
+const presentOrNot1 = friends.includes("23");
+// console.log(presentOrNot1);
+
+if (friends.includes("lovekush")) console.log("I am going to party");
+
+// includes usefull in the if else cause
+
+// ***********************************
+
+/*
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+*/
+
+// OBJECTS
+
+const jonasArr = [
+  "jonas",
+  "smith",
+  2023 - 2001,
+  "developer",
+  ["himanshu", "arvind", "rahul"],
+];
+
+const jonas1 = {
+  firstName: "Jonas",
+  lastName: "Smith",
+  age: 2023 - 2001,
+  job: "developer",
+  friends: ["himanshu", "arvind", "rahul"],
+};
+
+// console.log(jonas);
+
+// console.log(jonas.firstName);
+// console.log(jonas["lastName"]);
+
+const nameKey = "NameX";
+// console.log(jonas["firstName"] + nameKey);
+// console.log(jonas["lastName"] + nameKey);
+
+// console.log(jonas.firstName);
+
+// const myInput = prompt("What do you want to know?");
+// console.log(jonas[myInput]);
+
+// console.log(jonas.myInput);
+
+// if (jonas[myInput]) console.log(jonas[myInput]);
+// else console.log("wrong value");
+
+// jonas.location = "India";
+// jonas["instagram"] = "___akashyadav___";
+// jonas["freeTime"] = "ListionSong";
+// jonas.friends.push("Michael");
+
+// // console.log(jonas);
+
+// if (jonas.friends.includes("Michael")) {
+//   console.log(
+//     `${jonas.friends[jonas.friends.indexOf("Michael")]} is best friend`
+//   );
+// } else {
+//   console.log("Not present");
+// }
+
+// console.log(friends["length"]);
+
+// console.log(jonas);
+
+// jonas["calAge"] = function (birthYear) {
+//   return 2023 - birthYear;
+// };
+
+// console.log(jonas.calAge(2001));
+// console.log(jonas["calAge"](2002));
+
+// jonas["calAge"] = (birthYear) => {
+//   console.log(this);
+//   return 2023 - birthYear;
+// };
+
+// jonas.calAge(2023);
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Smith",
+  age: 2023 - 2001,
+  job: "developer",
+  friends: ["himanshu", "arvind", "rahul"],
+
+  birthYear: 2001,
+  hasDriverLincence: true,
+
+  // calAge: () => 2023 - this.birthYear,
+  calAge: () => {
+    this.age = this.birthYear - 2023;
+  },
+
+  challange: () => {
+    if (Boolean(this.hasDriverLincence)) console.log("has licence");
+    else console.log("Not a licence");
+  },
+};
+
+// const ageX = jonas.calAge();
+// console.log(ageX);
+// console.log(typeof jonas.birthYear);
+
+// console.log(jonas);
+// console.log(jonas.age);
+// console.log(jonas.calAge());
+
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+
+// console.log(Boolean(this.hasDriverLincence));
+
+// console.log(jonas.challange);
