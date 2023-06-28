@@ -429,3 +429,81 @@ const jonas = {
 // console.log(Boolean(this.hasDriverLincence));
 
 // console.log(jonas.challange);
+
+// **************************************
+
+// let i = 0;
+let sum = 0;
+
+for (let i = 0; i < 100; i++) {
+  sum += i;
+}
+// console.log(sum);
+
+sum = 0;
+let i = 1;
+while (i < 1000) {
+  sum += i++;
+}
+
+// console.log(sum);
+
+// *****************************************
+
+const arrExample1 = ["firstName", "lastName", "age"];
+const arrExample2 = ["akash", "yadav", 23];
+
+const objExample = {};
+
+let arr1, arr2;
+
+for (let i = 0; i < arrExample1.length; i++) {
+  objExample[String(arrExample1[i])] = arrExample2[i];
+  // arr1 = arrExample1[i];
+  // arr2 = arrExample2[i];
+  // // console.log(arr1, arr2);
+  // objExample[String(arr1)] = arr2;
+}
+
+// console.log(objExample);
+
+// let and var
+
+function newFun() {
+  // console.log(mySpecialVar);
+
+  // var mySpecialVar = 8976;
+  // console.log(mySpecialVar);
+
+  // // console.log(anyNum);
+
+  // let anyNum = 345;
+  // console.log(anyNum);
+
+  // var firstName = "Akash";
+  // let lastName = "Yadav";
+
+  // if (typeof firstName === "String") {
+  //   var firstName = firstName + lastName;
+  // } else {
+  //   let lastName = lastName + firstName;
+  // }
+
+  // console.log(firstName);
+  // console.log(lastName);
+
+  let x = 10;
+  var y = 20;
+
+  var typeVar = typeof x;
+  console.log(typeof typeVar);
+
+  if ((typeof x && typeof y) === "number") {
+    let x = 50;
+    var y = 100;
+  }
+
+  console.log(x);
+  console.log(y);
+}
+// newFun();
