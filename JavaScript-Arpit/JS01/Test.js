@@ -1,15 +1,10 @@
 
-// let nums = response => { console.log(response); }
+async function testApi() {
+    let responce = await fetch('https://catfact.ninja/fact');
 
-// nums("Hello")
+    const display = await responce.json();
 
-function ab(x, y) {
-    return x + y;
+    console.log(display);
 }
 
-function abc(x, y, callback) {
-    result = callback(x, y);
-    console.log(result);
-}
-
-abc(12, 20, ab);
+testApi();
