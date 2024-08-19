@@ -27,6 +27,12 @@ setTimeout(() => {
 }, 2500)
 
 setTimeout(() => {
+    console.log("2");
+
+}, 1000)
+
+
+setTimeout(() => {
     setTimeout(() => {
         setTimeout(() => {
             console.log("Heyyyy");
